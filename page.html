@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @keyframes appear {
+      from {
+        opacity: 0;
+        scale: 0.5;
+        clip-path: inset(100% 100% 0 0);
+      }
+      to {
+        opacity: 1;
+        scale: 1;
+        clip-path: inset(0 0 0 0);
+      }
+    }
+
+    .div1, .logo, #head1 {
+      animation: appear linear;
+      animation-timeline: view();
+      animation-range: entry 0% cover 25%;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="scc1">
+      <p>
+        Welcome to our institute, where innovation meets education in the pursuit of technological excellence. We are committed to fostering a dynamic learning environment that equips individuals with the knowledge and skills required to thrive in today’s technology-driven world. Our programs are designed to provide deep insights into current technological advancements while preparing learners to adapt to the rapidly evolving demands of the future. Through a curriculum grounded in both theoretical understanding and practical application, we aim to develop forward-thinking professionals ready to lead in the age of digital transformation.
+      </p>
+      <div class="logo"></div>
+      <h1 id="head1"><b>Train hard</b></h1>
+      <h1 id="head2"><b>Live better</b></h1>
+      <div class="div1"></div>
+    </div>
+
+    <div class="right-side">
+      <div class="container">
+        <form>
+          <h1>Login.</h1>
+          <div class="form-grp">
+            <label for="">Username</label>
+            <input type="text" class="form-contrl" required>
+          </div>
+          <div class="form-grp">
+            <label for="">Password</label>
+            <input type="password" class="form-contrl" required>
+          </div>
+          <input type="submit" class="btn" value="Submit">
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
