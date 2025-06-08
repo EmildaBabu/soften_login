@@ -12,6 +12,7 @@
   flex-wrap: wrap;
   width: 100%;
   overflow-x: hidden;
+  flex-direction: row;
 }
 
 .scc1 {
@@ -22,7 +23,7 @@
   align-items: flex-end;
   gap: 20px;
   min-height: 100vh;
-  padding: 20px;
+ 
 }
 
 .scc1 p {
@@ -30,18 +31,18 @@
   text-align: justify;
   color: rgb(13, 13, 14);
   margin-left: 30px;
-  margin-top: 40px;
+  margin-top: 10px;
+
 }
 
 .scc1 .logo {
-  background-image: url("/images/soften_web-1.png");
-  margin-top: 40px;
-  width: 350px;
-  height: 124px;
+  background-image: url("images/soften_web-1.png");
+  margin-top: 30px;
+  width: 450px;
+  height: 180px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 30px;
   margin-left: 90px;
 }
 
@@ -55,8 +56,14 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: animate-gradient 5.5s linear infinite;
+  font-weight: 800;
 }
 
+@keyframes animate-gradient {
+  to {
+    background-position: 200%;
+  }
+}
 #head2 {
   line-height: .7;
   background: linear-gradient(to right, #ebe8e8, #9fa1a2, #000000, #5c5a5a, #ebe8e8);
@@ -67,7 +74,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: animate-gradient 5.5s linear infinite;
-  padding: 0 0 20px 0;
+  padding: 0 0 10px 0;
+  font-weight: 800;
 }
 
 @keyframes animate-gradient {
@@ -79,26 +87,36 @@
 .div1 {
   display: flex;
   width: 100%;
-  max-width: 660px;
-  height: 550px;
-  background-image: url("/images/stud.jpg");
+  max-width: 750px;
+  height: 590px;
+  background-image: url("images/stud.jpg");
   background-size: cover;
   margin-left: 30px;
   margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .right-side {
-  flex: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40vw;
+  width: 40%;
   background: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   padding: 20px;
+  z-index: 10;
+  box-sizing: border-box;
 }
 
+
 .container {
+ 
   width: 100%;
+  height: 40%;
   max-width: 450px;
   background: #ffffff;
   padding: 30px;
@@ -133,22 +151,47 @@
 .btn {
   display: block;
   margin: 0 auto;
-  width: 100px;
+  width: 90px;
   height: 34px;
   border: none;
   background: #1482f8ee;
   box-shadow: 2px 2px 2px rgba(32, 29, 29, 0.615);
   cursor: pointer;
   font-size: 16px;
+  padding-right: 25px;
   text-transform: uppercase;
   color: white;
   border-radius: 4px;
   transition: .4s;
+ margin-top: 11%;
 }
 
 .btn:hover {
   opacity: .6;
 }
+.log_details div {
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.log_details a {
+ 
+  color: #007bff;
+  text-decoration:none;
+}
+.log_details  a:hover {
+  text-decoration:underline;
+  color: rgb(90, 7, 255);
+}
+/*.pass
+{
+  margin-top: 20px;
+  padding-left: 120px;
+}
+.sign{
+  margin-top: 10px;
+  padding-left: 80px;
+}*/
 
 /* Responsive for safety */
 @media (max-width: 1024px) {
@@ -179,3 +222,4 @@
     text-align: center;
   }
 }
+/*****************************************************************************************************/
