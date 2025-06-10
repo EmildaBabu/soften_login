@@ -1,68 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    @keyframes appear {
-      from {
-        opacity: 0;
-        scale: 0;
-        clip-path: inset(100% 100% 0 0);
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @keyframes appear {
+        from {
+          opacity: 0;
+          scale: 0;
+          clip-path: inset(100% 100% 0 0);
+        }
+        to {
+          opacity: 1;
+          scale: 1;
+          clip-path: inset(0 0 0 0);
+        }
       }
-      to {
-        opacity: 1;
-        scale: 1;
-        clip-path: inset(0 0 0 0);
+
+      .div1 {
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 25%;
       }
-    }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="scc1">
+        <p>
+          Welcome to our institute, where innovation meets education in the
+          pursuit of technological excellence. We are committed to fostering a
+          dynamic learning environment that equips individuals with the
+          knowledge and skills required to thrive in today’s technology-driven
+          world. Our programs are designed to provide deep insights into current
+          technological advancements while preparing learners to adapt to the
+          rapidly evolving demands of the future. Through a curriculum grounded
+          in both theoretical understanding and practical application, we aim to
+          develop forward-thinking professionals ready to lead in the age of
+          digital transformation.
+        </p>
+        <div class="logo"></div>
+        <h1 id="head1">Train hard</h1>
+        <h1 id="head2">Live better</h1>
+        <div class="div1"></div>
+      </div>
 
-    .div1 {
-      animation: appear linear;
-      animation-timeline: view();
-      animation-range: entry 0% cover 25%;
-    }
-  </style>
-</head>
-<body>
-  <div class="main">
-    <div class="scc1">
-      <p>
-        Welcome to our institute, where innovation meets education in the pursuit of technological excellence. We are committed to fostering a dynamic learning environment that equips individuals with the knowledge and skills required to thrive in today’s technology-driven world. Our programs are designed to provide deep insights into current technological advancements while preparing learners to adapt to the rapidly evolving demands of the future. Through a curriculum grounded in both theoretical understanding and practical application, we aim to develop forward-thinking professionals ready to lead in the age of digital transformation.
-      </p>
-      <div class="logo"></div>
-      <h1 id="head1">Train hard</h1>
-      <h1 id="head2">Live better</h1>
-      <div class="div1"></div>
-    </div>
-
-    <div class="right-side">
-      <div class="container">
-        <form>
-          <h1>Login.</h1>
-          <div class="form-grp">
-            <label for="">Username</label>
-            <input type="text" class="form-contrl" required>
-          </div>
-          <div class="form-grp">
-            <label for="">Password</label>
-            <input type="password" class="form-contrl" required>
-          </div>
-           <input type="submit" class="btn"value="Submit">
-           <div class="log_details">
-            <div class="pass">
-              <a href="#" style="text-decoration: none;">Forgot password?</a>
-           
-              <label style="white-space: pre;">               Don't have an account?</label>
-              <a href="#" style="text-decoration: none;">Sign up</a>
+      <div class="right-side">
+        <div class="container">
+          <form>
+            <h1>Login.</h1>
+            <div class="form-grp">
+              <!--<label for="username">Username</label-->
+              <input
+                type="text"
+                class="form-contrl"
+                placeholder="Username"
+                required
+              />
+              <img
+                src="/images/user-profile_17123272.png"
+                width="32px"
+                height="32px"
+              />
             </div>
-          </div>
-          
-        </form>
+            <div class="form-grp">
+              <!--<label for="">Password</label-->
+              <input
+                type="password"
+                class="form-contrl"
+                placeholder="Password"
+                required
+              />
+              <img
+                src="/images/icons8-lock-50.png"
+                width="32px"
+                height="32px"
+              />
+            </div>
+            <input type="submit" class="btn" value="Submit" />
+            <div class="log_details">
+              <div class="pass">
+                <a href="#" style="text-decoration: none">Forgot password?</a>
+
+                <label style="white-space: pre"> Don't have an account?</label>
+                <a href="#" style="text-decoration: none">Sign up</a>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
